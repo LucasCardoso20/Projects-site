@@ -29,16 +29,16 @@ const Projects = () => {
 
         <div className="projects__images__container">
             {projects.map((project, index)=> (
-                <div class="card" key={index}>
-                    <div class="card-header">
+                <div className="card" key={index}>
+                    <div className="card-header">
                         <a href={project.projectLink}>
                             <img src={urlFor(project.imgUrl)} alt={project.title} />
                         </a>
                     </div>
-                    <div class="card-body">
+                    <div className="card-body">
                         <div className='card__code'>
                             <a href={project.codeLink}> <i className='card__icon'><GoMarkGithub/></i> </a>
-                            <span class="tag tag-teal">{project.tags}</span>
+                            <span className="tag tag-teal">{project.tags}</span>
                         </div>
                        
                         <h2>
